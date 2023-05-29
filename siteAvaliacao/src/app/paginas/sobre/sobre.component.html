@@ -1,0 +1,65 @@
+<div class="container txt">
+  <div class="texto">
+    <h1>Quem Somos</h1>
+    <p>Somos uma loja de jogos localizada no coração do Rio de Janeiro e estamos comprometidos em oferecer a melhor
+      experiência para os entusiastas de jogos. Fundada em 2022 pela apaixonada por jogos Rafaella Moreira, a RM Games
+      é o lugar perfeito para os jogadores de todas as idades e gostos.</p>
+    <p>Em nossa loja, você encontrará uma ampla seleção de jogos de videogame, incluindo títulos para PlayStation, Xbox
+      e outros consoles populares. Além disso, também oferecemos uma variedade de jogos de tabuleiro e produtos geek
+      incríveis para alimentar sua paixão pela cultura nerd.</p>
+    <p>Mas a diversão não para por aí! Em nosso espaço de fliperama, você poderá reviver a nostalgia dos clássicos
+      arcades e experimentar os jogos mais modernos. É o lugar perfeito para nerds se reunirem, competirem e
+      compartilharem sua paixão pelos jogos.</p>
+    <p>Na RM Games, nosso compromisso vai além de apenas vender jogos. Queremos criar um ambiente acolhedor e divertido
+      para que os nerds se sintam em casa. Nossa equipe está sempre pronta para ajudar, oferecer recomendações e criar
+      momentos memoráveis para todos os clientes.</p>
+    <p>Então, junte-se a nós na RM Games, onde você encontrará uma incrível variedade de jogos de videogame, jogos de
+      tabuleiro, produtos geek e um espaço de fliperama emocionante. Estamos ansiosos para compartilhar nossa paixão
+      pelos jogos e criar uma comunidade de jogadores entusiasmados.</p>
+  </div>
+</div>
+
+<div class="container txt">
+  <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://static.wixstatic.com/media/a7896f_6eb34330343a4906bac6de1bfd3d8422~mv2.jpg/v1/fill/w_1903,h_662,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/a7896f_6eb34330343a4906bac6de1bfd3d8422~mv2.jpg" class="d-block w-100" style="max-height:350px; object-fit: cover;">
+      </div>
+      <div class="carousel-item">
+        <img src="https://media.blogto.com/articles/20180209-2048-SnakesandLattes16.jpg?w=2048&cmd=resize_then_crop&height=1365&quality=70" class="d-block w-100" style="max-height:350px; object-fit: cover;">
+      </div>
+      <div class="carousel-item">
+        <img src="https://t4.ftcdn.net/jpg/05/42/34/67/360_F_542346718_QJisCZdA9uHYsES4u7qxrtiIUzn1gVzL.jpg" class="d-block w-100" style="max-height:350px; object-fit: cover;">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+      data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+      data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
+
+<section class="index">
+  <div class="container mt-4 mb-4">
+    <h1 id="doces" class="text-center" style="margin-bottom: 20px;">Catálogo</h1>
+    <div class="row align-items-stretch">
+      <div class="col-lg-3 col-md-4 col-sm-6 col-12" *ngFor="let item of valores">
+        <div class="card geekCard d-flex flex-column" style="margin-bottom: 20px;">
+          <img class="card-img-top" src="{{ item.geekImg }}" alt="{{ item.geekName }}">
+          <div class="card-body">
+            <h4 class="card-title">{{ item.geekName }}</h4>
+            <p class="card-text details">{{ item.geekDetails }}</p>
+            <p class="card-text preco" id="preco">{{ item.geekPrice | currency:'BRL' }}</p>
+            <a routerLink="../contato" class="botao btn btn-primary mt-4">Comprar</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

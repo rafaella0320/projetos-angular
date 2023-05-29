@@ -1,0 +1,93 @@
+* {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h1{
+  color: #9933CC;
+  font-weight: bold;
+  text-align: center;
+}
+
+.txt{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.txt p {
+  color: white;
+  font-size: 20px;
+}
+
+.texto{
+  background-color: #33cc33a1;
+  border-radius: 10px;
+  padding: 16px;
+}
+
+.txt-content {
+  max-height: 800px;
+  overflow-y: auto;
+}
+
+.fotos {
+  max-height: 800px;
+}
+
+.fotos img {
+  object-fit: contain;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.geekCard {
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px #33cc3368;
+    transition: box-shadow 0.3s ease;
+    max-height: 600px;
+  }
+  
+  .geekCard:hover {
+    box-shadow: 0px 2px 4px #33cc33b8;
+  }
+  
+  .geekCard img {
+    border-radius: 8px;
+  }
+  
+  .geekCard h4 {
+    font-size: 18px;
+    margin-top: 10px;
+    color: #8447b0;
+  }
+
+  .geekCard p {
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #33cc33;
+  }
+
+  #preco{
+    color: #8447b0;
+  }
+
+.botao {
+    text-decoration: none;
+    background-color: #9933CC;
+    color: white;
+    padding: 10px 10px;
+    border-radius: 6px;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+    border: none;
+  }
+  
+  .botao:hover {
+    background-color: white;
+    color: #9933CC;
+    border: 1px solid #9933CC;
+  }
+

@@ -1,0 +1,68 @@
+* {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h1 {
+  font-size: 38px;
+  color: #9933CC;
+  font-weight: bold;
+  text-align: center;
+}
+
+p {
+  color: white;
+  font-size: 24px;
+}
+
+.textos {
+  background-color: #33cc33b8;
+  border-radius: 10px;
+  padding: 16px;
+}
+
+.geekCard {
+  padding: 10px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 2px 4px #33cc3368;
+  transition: box-shadow 0.3s ease;
+  max-height: 360px;
+}
+
+.geekCard:hover {
+  box-shadow: 0px 2px 4px #33cc33b8;
+}
+
+.geekCard img {
+  border-radius: 8px;
+}
+
+.geekCard h4 {
+  font-size: 20px;
+  margin-top: 10px;
+  color: #8447b0;
+  text-align: center;
+}
+
+.vermais {
+  text-decoration: none;
+  background-color: #9933CC;
+  color: white;
+  padding: 10px 10px;
+  border-radius: 6px;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+  border: none;
+}
+
+.vermais:hover {
+  background-color: white;
+  color: #9933CC;
+  border: 1px solid #9933CC;
+}
+
+@media (max-width: 991px) { /* Define a resolução de tablet */
+  .banner {
+    display: none;
+  }
+}

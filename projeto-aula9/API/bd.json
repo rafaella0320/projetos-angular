@@ -1,0 +1,24 @@
+{
+  "produto": [
+    {
+      "id": 1,
+      "nome": "Boneca Barbie",
+      "preco": 80
+   },
+    {
+      "id": 2,
+      "nome": "Boneco Homem Aranha",
+      "preco": 75
+    },
+    {
+      "id": 3,
+      "nome": "Jogo Twister",
+      "preco": 120
+    },
+    {
+      "id": 4,
+      "nome": "Bicicleta Aro 16 - Moana",
+      "preco": 350
+    }
+  ]
+}

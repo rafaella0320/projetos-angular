@@ -1,0 +1,16 @@
+<section class="cards">
+    <div class="container mt-4 mb-4">
+        <div class="row align-xs-stretch">
+            <div class="col-lg-3 col-md-4 col-sm-6 col-12" *ngFor="let x of produto">
+              <div class="card toyCard d-flex flex-column" style="margin-bottom: 20px;">
+                <img class="card-img-top fotos" src="{{ x.img }}" alt="{{ x.nome }}">
+                <div class="card-body">
+                  <h4 class="card-title">{{ x.nome }}</h4>
+                  <p class="card-text id">ID do Produto: {{ x.id }}</p>
+                  <p class="card-text preco" id="preco">{{ x.preco| currency:'BRL' }}</p>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+</section>

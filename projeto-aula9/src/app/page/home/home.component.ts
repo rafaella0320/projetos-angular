@@ -1,26 +1,10 @@
-import { Component, OnInit } from '@angular/core';
-import { ServicoService } from 'src/app/service/servico.service';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
-export class HomeComponent implements OnInit{
+export class HomeComponent {
 
-  produtos: Array<any> = new Array();
-
-  constructor(private servico: ServicoService) { }
-
-  ngOnInit(): void {
-    this.listar();
-  }  
-
-  listar(){
-    this.servico.listar().subscribe(produto => {
-      this.produtos = produto;
-    }, error => {
-      console.log("Erro!" + error);
-    });
-  }
 }

@@ -11,21 +11,19 @@ export class ServicoService {
   
   constructor(private http: HttpClient) { }
 
-  listarProdutos():Observable<any> {
-    return this.http.get(`${this.url}`);
+  listarProdutos(): Observable<any> {
+    return this.http.get(this.url);
   }
 
-  cadastrarProdutos(produto: ProdutoModel):Observable<any> {
-    return this.http.post(`${this.url}`, produto);
+  cadastrarProduto(produto: ProdutoModel): Observable<any> {
+    return this.http.post(this.url, produto);
   }
 
-  Atualizar(id: any, produto: ProdutoModel): Observable<any>{
-    return this.http.put(`${this.url}`.concat(id), produto)
-  }
-  Excluir(id: any){
-    return this.http.delete(`${this.url}`.concat(id))
-
+  atualizarProduto(id: any, produto: ProdutoModel): Observable<any> {
+    return this.http.put(`${this.url}/${id}`, produto);
   }
 
-
+  excluirProduto(id: any): Observable<any> {
+    return this.http.delete(`${this.url}/${id}`);
+  }
 }

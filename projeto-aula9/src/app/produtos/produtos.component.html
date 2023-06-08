@@ -9,11 +9,17 @@
       </div>
       <div class="form-group">
         <label for="exampleInputPreco">Preço</label>
-        <input type="number" class="form-control" id="exampleInputPreco" placeholder="Digite o preço no produto"
-          [(ngModel)]="produto.preco">
+        <input type="number" class="form-control" id="exampleInputPreco" name="preco" placeholder="Digite o preço no produto"
+          [(ngModel)]="produto.preco" [ngModelOptions]="{ standalone: true }">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputNome">Imagem</label>
+        <input type="text" class="form-control" id="exampleInputNome" name="name" placeholder="Adicione o link da imagem aqui"
+          [(ngModel)]="produto.img">
       </div>
       <button type="button" (click)="cadastrar()" class="btn btn-primary">Cadastrar</button>
     </form>
+    
   </div>
   <div class="container mt-4 mb-4">
     <div class="row align-xs-stretch">
@@ -25,8 +31,8 @@
             <h4 class="card-title">{{ x.nome }}</h4>
             <p class="card-text id">ID do Produto: {{ x.id }}</p>
             <p class="card-text preco" id="preco">{{ x.preco| currency:'BRL' }}</p>
-            <button (click)="atualizarProduto(x.id) ">Atualizar</button>
-            <button (click)="removerProduto(x.id)"> Excluir</button>
+            <button class="btn btn2" (click)="atualizarProduto(x.id) ">Atualizar</button>
+            <button class="btn btn2" (click)="removerProduto(x.id)"> Excluir</button>
           </div>
         </div>
       </div>

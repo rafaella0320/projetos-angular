@@ -28,7 +28,7 @@ export class ProdutosComponent implements OnInit {
 
   cadastrar() {
     console.log(this.produto)
-    this.servico.cadastrarProdutos(this.produto).subscribe(a => {
+    this.servico.cadastrarProduto(this.produto).subscribe(a => {
       this.produto = new ProdutoModel()
       this.listar()
     }, err => {
@@ -38,7 +38,7 @@ export class ProdutosComponent implements OnInit {
 
   atualizarProduto(id: Number) {
 
-    this.servico.Atualizar(id, this.produto).subscribe(a => {
+    this.servico.atualizarProduto(id, this.produto).subscribe(a => {
       this.produto = new ProdutoModel()
       this.listar()
     }, err => {
@@ -46,7 +46,7 @@ export class ProdutosComponent implements OnInit {
     })
   }
   removerProduto(id: number) {
-    this.servico.Excluir(id).subscribe(a => {
+    this.servico.excluirProduto(id).subscribe(a => {
       this.produto = new ProdutoModel()
       this.listar()
     }, err => {

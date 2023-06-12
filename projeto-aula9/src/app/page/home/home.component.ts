@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ProdutoModel } from 'src/app/page/produtos/produto.model';
 import { ServicoService } from 'src/app/service/servico.service';
-import { ProdutoModel } from '../../produtos/produto.model';
 
 @Component({
   selector: 'app-home',

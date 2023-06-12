@@ -11,7 +11,8 @@ import { RodapeComponent } from './sharepage/rodape/rodape.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { ContatosComponent } from './page/contatos/contatos.component';
-import { ProdutosComponent } from './produtos/produtos.component';
+import { ProdutosComponent } from './page/produtos/produtos.component';
+import { LoginComponent } from './page/login/login.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { ProdutosComponent } from './produtos/produtos.component';
     MenuComponent,
     RodapeComponent,
     ContatosComponent,
-    ProdutosComponent
+    ProdutosComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

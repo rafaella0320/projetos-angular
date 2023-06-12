@@ -8,7 +8,7 @@
 }
 
 nav {
-	background-image: linear-gradient(to right, #FFC0CB 3%, #00FF7F);
+	background-image: linear-gradient(to right, #FFC0CB, #87CEEB 40%);
 	height: 80px;
 	width: 100%;
 }

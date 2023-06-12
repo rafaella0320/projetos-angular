@@ -8,7 +8,6 @@ import { ProdutoModel } from './produto.model';
   styleUrls: ['./produtos.component.css']
 })
 export class ProdutosComponent implements OnInit {
-
   produto: ProdutoModel = new ProdutoModel();
   produtoArray: Array<any> = new Array();
 
@@ -53,5 +52,4 @@ export class ProdutosComponent implements OnInit {
       console.log("Erro ao excluir o produto", err)
     })
   }
-
 }

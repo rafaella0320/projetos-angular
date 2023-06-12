@@ -11,6 +11,7 @@ import { AlunosComponent } from './alunos/alunos.component';
 import { LoginComponent } from './login/login.component';
 import { PainelComponent } from './painel/painel.component';
 import { HomeComponent } from './home/home.component';
+import { FormsComponent } from './forms/forms.component';
 
 
 
@@ -20,7 +21,8 @@ import { HomeComponent } from './home/home.component';
     AlunosComponent,
     LoginComponent,
     PainelComponent,
-    HomeComponent
+    HomeComponent,
+    FormsComponent
   ],
   imports: [
     BrowserModule,
